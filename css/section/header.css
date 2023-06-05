@@ -1,0 +1,145 @@
+.header {
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  background-color: transparent;
+
+  z-index: 999998;
+  transition: 0.25s;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.6);
+}
+.header.is--active {
+  background-color: #fff;
+}
+.header .inner {
+  position: relative;
+  width: 100%;
+  max-width: calc(100% - 8rem);
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.logo a {
+  position: relative;
+}
+.logo .main {
+  position: relative;
+  opacity: 1;
+  z-index: 9;
+}
+.header.is--active .logo .main {
+  opacity: 0;
+}
+.logo .hide {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.gnb {
+  margin-right: 68px;
+}
+.gnb .mainmenu > li {
+  position: relative;
+  display: inline-block;
+}
+.gnb .mainmenu > li > a {
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 3.25rem 2.5rem;
+  color: #fff;
+  transition: 0.3s;
+}
+.gnb .mainmenu.is--active > li > a {
+  color: #333;
+}
+.gnb .mainmenu > li > a:hover {
+  color: #eb2a4a;
+}
+.gnb .mainmenu > li > .submenu {
+  position: absolute;
+  top: 135%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  min-width: 180px;
+  width: 120%;
+  border-radius: 8px;
+  background: #bf2a4c;
+
+  font-size: 1.8rem;
+  line-height: 1.75;
+  padding: 1.25rem 0.5rem;
+  text-align: center;
+  color: #fff;
+
+  z-index: 99;
+}
+.gnb .mainmenu > li > .submenu.is--active {
+  display: block;
+}
+.gnb .mainmenu > li > .submenu a {
+  display: block;
+  padding: 0.25rem 0;
+}
+
+.util-menu {
+  display: flex;
+}
+.util-menu .language {
+  margin-right: 2.2rem;
+  font-size: 2.2rem;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  line-height: 3rem;
+  transition: 0.3s;
+}
+.util-menu .gnb-open {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("../../images/icon/list.svg") no-repeat center;
+  background-size: contain;
+}
+.header.is--active .util-menu > * {
+  color: #333;
+}
+.header.is--active .util-menu .gnb-open {
+  width: 30px;
+  height: 30px;
+  background: url("../../images/icon/list_black.svg") no-repeat center;
+  background-size: contain;
+}
+/* ---------------------- */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+section {
+  width: 100%;
+  height: 100%;
+}

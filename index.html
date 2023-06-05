@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 반응형 -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1, user-scalable=no" />
+
+    <!-- 파비콘 -->
+    <link
+      rel="shortcut icon"
+      href="images/favicon/favicon.png"
+      type="image/x-icon" />
+
+    <title>청와대 | 클론코딩</title>
+
+    <!-- html 버전 처리 -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- vender pre fix -->
+    <script src="js/prefixfree.min.js"></script>
+    <!-- response -->
+    <script src="js/respond.min.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- header -->
+      <header class="header">
+        <div class="inner">
+          <h1 class="logo">
+            <a href="#">
+              <img class="main" src="./images/logo.png" alt="청와대" />
+              <img class="hide" src="./images/logo_black.png" alt="청와대" />
+            </a>
+          </h1>
+          <nav class="gnb">
+            <ul class="mainmenu">
+              <li>
+                <a href="#">개방의 의미</a>
+              </li>
+              <li>
+                <a href="#">청와대 소개</a>
+                <ul class="submenu">
+                  <li><a href="#">역사</a></li>
+                  <li><a href="#">지도 및 주요시설</a></li>
+                  <li><a href="#">경내 주요 유적</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">관람안내</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="#">관람 규칙 및 규정</a>
+                  </li>
+                  <li>
+                    <a href="#">관람 시간 및 해설 안내</a>
+                  </li>
+                  <li>
+                    <a href="#">관람 신청</a>
+                  </li>
+                  <li>
+                    <a href="#">관람 안내도</a>
+                  </li>
+                  <li>
+                    <a href="#">함께 가 볼 만한 장소</a>
+                  </li>
+                  <li>
+                    <a href="#">공연 프로그램</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">등산로</a>
+                <ul class="submenu">
+                  <li><a href="#">개요</a></li>
+                  <li><a href="#">등산로 코스</a></li>
+                  <li><a href="#">등산로 이모저모</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">오시는 길 및 교통정보</a>
+                <ul class="submenu">
+                  <li><a href="#">오시는 길</a></li>
+                  <li><a href="#">청와대 관람 순환버스</a></li>
+                  <li><a href="#">서울시자율주행버스(청와대A01)</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">국민소통</a>
+                <ul class="submenu">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">미디어센터</a></li>
+                  <li><a href="#">자주 하는 질문</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">내가 만드는 청와대</a>
+                <ul class="submenu">
+                  <li><a href="#">관람후기</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="util-menu">
+            <a href="#lang" class="language">EN</a>
+            <button class="gnb-open"></button>
+          </div>
+        </div>
+      </header>
+      <nav class="gnb-side">
+        <div class="inner">
+          <div class="pic">
+            <h4 class="sitemap">SITE MAP</h4>
+          </div>
+          <button class="gnb-close"></button>
+          <ul class="mainmenu">
+            <li>
+              <a href="#">개방의 의미</a>
+            </li>
+            <li>
+              <a href="#">청와대 소개</a>
+              <ul class="submenu">
+                <li><a href="#">역사</a></li>
+                <li><a href="#">지도 및 주요시설</a></li>
+                <li><a href="#">경내 주요 유적</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">관람안내</a>
+              <ul class="submenu">
+                <li>
+                  <a href="#">관람 규칙 및 규정</a>
+                </li>
+                <li>
+                  <a href="#">관람 시간 및 해설 안내</a>
+                </li>
+                <li>
+                  <a href="#">관람 신청</a>
+                </li>
+                <li>
+                  <a href="#">관람 안내도</a>
+                </li>
+                <li>
+                  <a href="#">함께 가 볼 만한 장소</a>
+                </li>
+                <li>
+                  <a href="#">공연 프로그램</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">등산로</a>
+              <ul class="submenu">
+                <li><a href="#">개요</a></li>
+                <li><a href="#">등산로 코스</a></li>
+                <li><a href="#">등산로 이모저모</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">오시는 길 및 교통정보</a>
+              <ul class="submenu">
+                <li><a href="#">오시는 길</a></li>
+                <li><a href="#">청와대 관람 순환버스</a></li>
+                <li><a href="#">서울시자율주행버스(청와대A01)</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">국민소통</a>
+              <ul class="submenu">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">미디어센터</a></li>
+                <li><a href="#">자주 하는 질문</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">내가 만드는 청와대</a>
+              <ul class="submenu">
+                <li><a href="#">관람후기</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- https://github.com/vitaZ-dev/cheongwhadae.git -->
+      <!-- carousel -->
+      <section class="carousel" style="background-color: rgb(59, 78, 85)">
+        <!-- Swiper -->
+        <div class="swiper sw-carousel">
+          <div class="swiper-wrapper">
+            <!-- json에서 목록관리(예정) -->
+            <div class="swiper-slide">
+              <img src="./images/v_img01.jpg" alt="img01" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/v_img02.jpg" alt="img02" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/v_img03.jpg" alt="img03" />
+            </div>
+          </div>
+        </div>
+        <div class="scroll">
+          <span>스크롤</span>
+        </div>
+      </section>
+      <script>
+        const carouselSwiper = new Swiper(".sw-carousel", {
+          loop: true,
+          effect: "fade",
+          speed: 2000,
+          autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+          },
+        });
+      </script>
+
+      <!-- section01 -->
+      <section class="section01" style="background-color: chartreuse">
+        <div class="inner">
+          <h3 class="title"></h3>
+          <p class="desc"></p>
+        </div>
+      </section>
+
+      <!-- section02 -->
+      <section class="section02" style="background-color: cyan">
+        <div class="inner">
+          <h3 class="title"></h3>
+          <p class="desc"></p>
+        </div>
+      </section>
+
+      <!-- section03 -->
+      <section class="section03" style="background-color: coral">
+        <div class="inner">
+          <h3 class="title"></h3>
+          <p class="desc"></p>
+        </div>
+      </section>
+
+      <!-- section04 -->
+      <section class="community" style="background-color: plum">
+        <div class="inner">
+          <h3 class="title"></h3>
+          <p class="desc"></p>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer
+        class="footer"
+        style="background-color: lightslategray; height: 100px">
+        <div class="inner"></div>
+      </footer>
+    </div>
+  </body>
+  <script src="./js/header.js"></script>
+</html>
